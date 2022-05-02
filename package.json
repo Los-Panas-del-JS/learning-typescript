@@ -1,0 +1,20 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "description": "Learning Typescript from scratch by LosPanasDelJS",
+  "repository": "git@github.com:Los-Panas-del-JS/learning-typescript.git",
+  "author": "diegodisant <developerdiego0@gmail.com>",
+  "license": "GPL",
+  "private": true,
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/** --fix",
+    "lint:check": "./node_modules/.bin/eslint src/**",
+    "run-js": "exec_script() { ./node_modules/.bin/tsc src/$1.ts && js src/$1.js && rm src/$1.js; }; exec_script"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.6.4"
+  }
+}
