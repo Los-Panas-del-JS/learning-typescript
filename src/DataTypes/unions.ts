@@ -127,3 +127,4 @@ princtComponent(multiply(scalarOne, scalarTwo)); // k * k
 princtComponent(multiply(vectorOne, vectorTwo)); // v * v
 princtComponent(multiply(vectorOne, scalarOne)); // v * k
 princtComponent(multiply(scalarTwo, vectorTwo)); // k * v
+
