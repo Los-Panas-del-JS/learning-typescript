@@ -63,7 +63,7 @@ class ForwardLinkedList<ListType> implements ForwardLinkedListInterface<ListType
   print(): void {
     let tempNode: ForwardNode<ListType> = this.rootNode.clone();
 
-    for(;tempNode !== null;) {
+    for(;tempNode !== undefined;) {
       console.log(`[${tempNode.value}] `);
 
       tempNode = tempNode.nextNode;
@@ -79,11 +79,11 @@ type PList = number | string | boolean | T;
 
 const list = new ForwardLinkedList<PList>();
 
-list.add(1);
-list.add(2);
-list.add(3);
-list.add(4);
-list.add(T.r32);
-list.add(true);
+const arr: Array<number> = [];
 
-list.print();
+for (let sampleIndex: number = 1; sampleIndex <= (10 ** 8); sampleIndex += 1) {
+  //list.add(sampleIndex);
+  arr.push(sampleIndex);
+}
+
+//list.print();
